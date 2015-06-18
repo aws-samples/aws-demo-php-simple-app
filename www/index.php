@@ -1,6 +1,6 @@
 <?php
 
-$AppName = "Updated Demo App";
+$AppName = "Demo Web App";
 
 ob_start();
 
@@ -18,7 +18,7 @@ include "lib.php";
     	http://unsplash.com
     	http://absurdwordpreferred.deviantart.com/art/FREE-Cogs-Transparent-PNG-145452644
     -->
-	<title>CircleCI & CodeDeploy</title>
+	<title>AWS Demo Web Application</title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 	<meta charset="UTF-8">
@@ -150,7 +150,7 @@ include "lib.php";
 		<div class="row">
 			<div class="col-lg-12">
 				<p class="templatemo-copyright-container text-uppercase small templatemo-brown">
-					<span class="templatemo-copyright-text">Copyright &copy; 2015 <a href="#" class="templatemo-gold">CircleCI</a></span>
+					<span class="templatemo-copyright-text">Copyright &copy; 2015 <a href="#" class="templatemo-gold">Amazon Web Services</a></span>
 					<!-- <span class="templatemo-copyright-design">Design: <a href="http://www.templatemo.com" class="templatemo-gold">templatemo</a></span> -->
 				</p>
 			</div>
