@@ -1,5 +1,5 @@
 <?php
-//Test file for CircleCI
+//Test file non-zero exit is failure
 
 chdir("www/");
 
