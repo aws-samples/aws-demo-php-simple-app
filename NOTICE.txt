@@ -1,5 +1,5 @@
 aws-demo-php-simple-app
-Copyright 2015-2015 Amazon.com, Inc. or its affiliates. All Rights Reserved. 
+Copyright 2015 Amazon.com, Inc. or its affiliates. All Rights Reserved. 
 
 
 
@@ -8,8 +8,8 @@ THIRD PARTY COMPONENTS
 **********************
 This software includes third party software subject to the following copyrights:
 
-	
-	- Chart.js - Copyright 2015 MIT license
+	- Bootstrap - Copyright 2011-2014 Twitter, Inc. MIT License
+	- Chart.js - Copyright 2015 Nick Downie, MIT license
         - Brownie Template - Creative Commons 3.0 US
 
 The licenses for these third party components are included in LICENSE.txt 

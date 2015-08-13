@@ -1,6 +1,6 @@
 <?php
 /*
-# Copyright 2015-2015 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# Copyright 2015 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with the License. A copy of the License is located at
 #
 #       http://aws.amazon.com/apache2.0/
@@ -8,7 +8,7 @@
 # or in the "license" file accompanying this file. This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and limitations under the License.
 #
-# This code has been modified. Portions copyright 2015 - 2015 Amazon.com, Inc. or its affiliates. 
+# This code has been modified. Portions copyright 2015 Amazon.com, Inc. or its affiliates. 
 # Please see LICENSE.txt for applicable license terms and NOTICE.txt for applicable notices. 
 */
 
@@ -26,7 +26,6 @@ include "lib.php";
     	http://www.templatemo.com/preview/templatemo_440_brownie
 
     	Credits:
-    	http://sorgalla.com/jcarousel/
     	http://unsplash.com
     	http://absurdwordpreferred.deviantart.com/art/FREE-Cogs-Transparent-PNG-145452644
     -->
