@@ -9,6 +9,11 @@
 # See the License for the specific language governing permissions and limitations under the License.
 */
 
+function generateRandomString($length)
+	{
+	return substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, $length);
+	}
+
 function get_perc()
 	{
 	$info = array();

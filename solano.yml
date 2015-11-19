@@ -7,6 +7,6 @@ tests:
     mode: parallel
     output: exit-status
     command: vendor/bin/solano-phpunit
-    config: blog-phpunit.xml    # Defaults : phpunit.xml, phpunit.xml.dist
+    config: phpunit.xml
     files:
       - tests/**Test.php
