@@ -33,7 +33,7 @@ if($loadGenUse != 1)
                 }
         }
 
-include 'lib.php';
+include 'loadFunctions.php';
 
 if(!isset($_GET['cost']))
 	{
