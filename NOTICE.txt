@@ -11,6 +11,7 @@ This software includes third party software subject to the following copyrights:
 	- Bootstrap - Copyright 2011-2014 Twitter, Inc. MIT License
 	- Chart.js - Copyright 2015 Nick Downie, MIT license
         - Brownie Template - Creative Commons 3.0 US
+	- PHPUnit - Copyright (c) 2001-2015, Sebastian Bergmann <sebastian@phpunit.de>
 
 The licenses for these third party components are included in LICENSE.txt 
 
