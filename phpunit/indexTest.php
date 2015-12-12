@@ -6,7 +6,8 @@ class indexTest extends PHPUnit_Framework_TestCase
 		{
 		ob_start();
 		include('www/index.php');
-		$output = ob_get_flush();
+		$output = ob_get_clean();
+		ob_end_clean();
 		$this->assertContains("Overview of major system components", $output);
 		}
 	}
