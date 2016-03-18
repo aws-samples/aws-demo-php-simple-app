@@ -26,6 +26,11 @@ if($configLoad != 1)
 
 if($loadGenUse != 1)
         {
+        if(!isset($GLOBALS['LOAD_OVERRIDE']))
+                {
+                print "Load Generator not configured for use.\n";
+                exit(1);
+                }
         if($GLOBALS['LOAD_OVERRIDE'] != 1)
                 {
                 print "Load Generator not configured for use.\n";
