@@ -45,7 +45,7 @@ if(($cost < 1) || ($cost > 50))
 	exit(1);
 	}
 
-$options = [ 'cost' => $cost ];
+$options = array('cost' => $cost);
 
 if(password_verify($string,$hash))
 	{

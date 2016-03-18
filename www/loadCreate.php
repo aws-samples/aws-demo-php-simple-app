@@ -45,7 +45,7 @@ $strLen = 14;
 $cost = $_GET['cost'];
 $count = 1;
 
-$options = [ 'cost' => $cost ];
+$options = array('cost' => $cost);
 
 for($i = 0; $i < $count; $i++)
 	{
