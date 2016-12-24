@@ -1,0 +1,30 @@
+system:
+  docker: true
+
+environment:
+  'DOCKER_APP': 'solano'
+  'DEPLOY_AWS_ECS': 'true'
+  'AWS_ECS_CLUSTER': 'solano-ecs-cluster'
+  'AWS_ECS_SERVICE': 'solano-ecs-service'
+  'AWS_ECS_TASK_DEFINITION': 'solano-family'
+  'AWS_ECS_TASK_NAME': 'solano-task-definition'
+  'AWS_ELB_NAME': 'solano-elb'
+  # For sensitive values, use `solano config:add repo <key> <value>` from the cli
+  # See: http://docs.solanolabs.com/Setup/setting-environment-variables/#via-config-variables
+  # 'DOCKER_USER': '<set-with-cli>'
+  # 'DOCKER_EMAIL': '<set-with-cli>'
+  # 'DOCKER_PASSWORD': '<set-with-cli>'
+
+timeout_hook: 900
+
+hooks:
+  pre_setup: chmod -R 755 ./scripts
+  post_setup: ./scripts/solano-docker-ecr-build-push.sh
+  post_build: ./scripts/solano-docker-ecs-deploy.sh
+
+php:
+  php_version: "5.6"
+
+tests:
+  - './solano-test.sh'
+  - 'echo "Done with Image Test"'
