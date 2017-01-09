@@ -1,5 +1,15 @@
 #!/bin/bash
-# Build and start docker container
+
+# Copyright 2015 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with the License. A copy of the License is located at
+#
+#       http://aws.amazon.com/apache2.0/
+#
+# or in the "license" file accompanying this file. This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and limitations under the License.
+#
+# 
+# Description: Build, test and store docker container image in AWS ECR
 
 #initial version provided by Solano Labs:
 #  https://github.com/solanolabs/ci_memes-docker/
@@ -39,6 +49,7 @@ fi
 export AWS_ACCESS_KEY_ID=$AWS_ASSUME_ROLE_ACCESS_KEY_ID
 export AWS_SECRET_ACCESS_KEY=$AWS_ASSUME_ROLE_SECRET_ACCESS_KEY
 export AWS_SESSION_TOKEN=$AWS_ASSUME_ROLE_SESSION_TOKEN
+#uncomment below for the Solano output of credentials used
 #aws configure list
 
 #Log in to AWS ECR Docker Repository

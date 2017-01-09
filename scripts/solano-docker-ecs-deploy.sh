@@ -1,5 +1,17 @@
 #!/bin/bash
 
+# Copyright 2015 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with the License. A copy of the License is located at
+#
+#       http://aws.amazon.com/apache2.0/
+#
+# or in the "license" file accompanying this file. This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and limitations under the License.
+#
+#
+# Description: Update AWS ECS task definition with new version using AWS ECR version just created
+#              Call for the update of the AWS ECS environment to new task definitiion version
+#
 #initial version provided by Solano Labs:
 #  https://github.com/solanolabs/ci_memes-docker/
 
@@ -27,12 +39,13 @@ if [ -n "$DEPLOY_AWS_ECS" ] && [[ "true" == "$DEPLOY_AWS_ECS" ]]; then
   export AWS_ACCESS_KEY_ID=$AWS_ASSUME_ROLE_ACCESS_KEY_ID
   export AWS_SECRET_ACCESS_KEY=$AWS_ASSUME_ROLE_SECRET_ACCESS_KEY
   export AWS_SESSION_TOKEN=$AWS_ASSUME_ROLE_SESSION_TOKEN
-  echo "Token: $AWS_SESSION_TOKEN"
+  #Uncomment below to have session token value available in logs
+  #echo "Token: $AWS_SESSION_TOKEN"
 
   # Ensure required environment variables are set
   if [ -z "$AWS_ACCESS_KEY_ID" ] || [ -z "$AWS_SECRET_ACCESS_KEY" ] || [ -z "$AWS_DEFAULT_REGION" ]; then
     echo "AWS ECS deploy requires setting \$AWS_ACCESS_KEY_ID, \$AWS_SECRET_ACCESS_KEY, and \$AWS_DEFAULT_REGION"
-    echo 'See: http://docs.solanolabs.com/Setup/setting-environment-variables/#via-config-variables'
+    echo 'These variables are provided by either the Solano cross-account role feature or the Solano CLI'
     exit 1
   fi
 
