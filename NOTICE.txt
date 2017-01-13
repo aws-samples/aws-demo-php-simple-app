@@ -9,10 +9,10 @@ THIRD PARTY COMPONENTS
 This software includes third party software subject to the following copyrights:
 
 	- Bootstrap - Copyright 2011-2014 Twitter, Inc. MIT License
-	- Chart.js - Copyright 2015 Nick Downie, MIT license
+	- Chart.js - Copyright 2015 Nick Downie, MIT License
         - Brownie Template - Creative Commons 3.0 US
 	- PHPUnit - Copyright (c) 2001-2015, Sebastian Bergmann <sebastian@phpunit.de>
-	- CI_Memes-Docker - Copyright 2015, Solao Labs
+	- CI_Memes-Docker - Copyright 2015, Solao Labs, 3-clause BSD License
 
 The licenses for these third party components are included in LICENSE.txt 
 
